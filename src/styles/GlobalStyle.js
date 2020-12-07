@@ -68,6 +68,7 @@ const GlobalStyle = createGlobalStyle`
       background-color: ${colors.offwhite};
       outline: 0;
     }
+
   }
 `;
 

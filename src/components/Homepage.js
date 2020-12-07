@@ -6,11 +6,7 @@ const HomepageContainer = styled.div`
 `;
 
 function Homepage() {
-  return (
-    <HomepageContainer>
-      <h1>Hello cheeky</h1>
-    </HomepageContainer>
-  );
+  return <HomepageContainer></HomepageContainer>;
 }
 
 export default Homepage;

@@ -1,6 +1,10 @@
 import Homepage from "./Homepage";
+import Left from "./Left";
+import Right from "./Right";
 import styled from "styled-components";
 import GlobalStyle from "../styles/GlobalStyle";
+
+import { Container, Row, Col } from "react-bootstrap";
 
 function App() {
   const AppContainer = styled.div`
@@ -9,9 +13,20 @@ function App() {
   `;
 
   return (
-    <AppContainer>
+    <AppContainer fluid className="fill">
       <GlobalStyle />
-      <Homepage />
+      {/* Should I use bootstrap layout here or use styled-components */}
+      {/* <Row>
+        <Col>
+          <Left />
+        </Col>
+        <Col>
+          <Homepage />
+        </Col>
+        <Col>
+          <Right />
+        </Col>
+      </Row> */}
     </AppContainer>
   );
 }
