@@ -5,7 +5,9 @@ const theme = {
     white: "white",
     black: "black",
     gray: "gray",
-    offwhite: "aliceblue",
+    offWhite: "aliceblue",
+    offOrange: "#ffa50054",
+    offPink: "#ff417f",
   },
 
   fonts: {
@@ -21,6 +23,7 @@ const theme = {
     lg: `24px`,
     xl: `28px`,
     xxl: `32px`,
+    xxxl: `70px`,
   },
 
   spacings: {

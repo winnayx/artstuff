@@ -1,27 +1,23 @@
+import User from "./User";
 import styled from "styled-components";
 import theme from "../styles/theme";
 const { colors } = theme;
 
 const MainViewContainer = styled.div`
   height: 100%;
+  width: 100%;
+  float: left;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-`;
-
-const User = styled.div`
-  max-height: 500px;
-  min-height: 340px;
-  height: 30vh;
-  padding: 0 32px 24px;
-  overflow: hidden;
-  color: ${colors.white};
+  overflow: scroll;
 `;
 
 const OverviewSection = styled.div`
   margin-top: 40px;
   display: flex;
-  height: 30px;
+  min-height: 230px;
+  padding: 0 16px;
   background: ${colors.gray};
 `;
 
@@ -36,9 +32,15 @@ function MainView() {
       <OverviewSection>
         <h1>Public viewlists</h1>
       </OverviewSection>
-      <RecentlyViewed>
+      <OverviewSection>
         <h1>Recently viewed artists</h1>
-      </RecentlyViewed>
+      </OverviewSection>
+      <OverviewSection>
+        <h1>Followers</h1>
+      </OverviewSection>
+      <OverviewSection>
+        <h1>Following</h1>
+      </OverviewSection>
     </MainViewContainer>
   );
 }
